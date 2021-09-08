@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.concert.com/event"
+	xmlns:tns="http://www.concert.com/event"
+	xmlns:cmn="http://www.concert.com/common"
+	elementFormDefault="qualified">
+
+	<include schemaLocation="organizer.xsd" />
+	<include schemaLocation="venue.xsd" />
+	<include schemaLocation="participant.xsd" />
+	<import schemaLocation="common.xsd"
+		namespace="http://www.concert.com/common" />
+
+	<element name="event">
+		<complexType>
+			<sequence>
+				<element name="name" type="string" />
+				<element name="description" type="cmn:max200Chars" />
+				<element name="ticketPrice" type="cmn:max25Chars" />
+				<element name="startTime" type="dateTime" />
+				<element name="endTime" type="dateTime" />
+				<element name="organizer" type="tns:organizerComponents" />
+				<element name="venue" type="tns:venueComponents" />
+				<element name="participant" type="tns:participantComponents" minOccurs="3"
+					maxOccurs="unbounded" />
+			</sequence>
+			
+			<attribute name="id" type="cmn:id" use="required"/>
+			
+		</complexType>
+	</element>
+</schema>

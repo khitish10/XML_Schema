@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:event id="123456" xmlns:tns="http://www.concert.com/event" xmlns:tns1="http://www.concert.com/common" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.concert.com/event event.xsd ">
+  <tns:name>tns:name</tns:name>
+  <tns:description>tns:description</tns:description>
+  <tns:ticketPrice>tns:ticketPrice</tns:ticketPrice>
+  <tns:startTime>2001-12-31T12:00:00</tns:startTime>
+  <tns:endTime>2001-12-31T12:00:00</tns:endTime>
+  <tns:organizer id="123456">
+    <tns:name>Gustavo</tns:name>
+    <tns:email>guss@gmail.com</tns:email>
+    <tns:phoneNumber>8898786475</tns:phoneNumber>
+  </tns:organizer>
+  <tns:venue id="123456">
+    <tns:name>CAL Stadium</tns:name>
+    <tns:street>Westwood</tns:street>
+    <tns:city>Downtown</tns:city>
+    <tns:state>California</tns:state>
+    <tns:country>USA</tns:country>
+    <tns:zipcode>750462</tns:zipcode>
+  </tns:venue>
+  <tns:participant id="123456">
+    <tns:name>John</tns:name>
+    <tns:email>john10@gmail.com</tns:email>
+    <tns:phoneNumber>1627534567</tns:phoneNumber>
+  </tns:participant>
+  <tns:participant id="123456">
+    <tns:name>Bob</tns:name>
+    <tns:email>bob23@gmail.com</tns:email>
+    <tns:phoneNumber>9987878653</tns:phoneNumber>
+  </tns:participant>
+  <tns:participant id="123456">
+    <tns:name>Marley</tns:name>
+    <tns:email>marley@gmail.com</tns:email>
+    <tns:phoneNumber>8898765678</tns:phoneNumber>
+  </tns:participant>
+</tns:event>

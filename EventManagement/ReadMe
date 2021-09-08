@@ -1,0 +1,24 @@
+xxxxxxxxxxxxxxxxxxxxxxx Basic Template xxxxxxxxxxxxxxxxxxxxx
+
+Event Management:
+	Event:(Main Schema, add attrubute ID)
+		name(25 Chars max)
+		description(200 Chars max)
+		ticketPrice
+		StartTime
+		Endtime
+		Organizer:(diffrent schema)
+			name
+			email
+			phone(10 digits max using pattern)
+		Venue:(diffrent schema)
+			name
+			street
+			city
+			state
+			country
+			zipcode
+		Participant:(diffrent schema,min 3 should be there)
+			name
+			email(using pattern)
+			phone

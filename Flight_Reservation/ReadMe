@@ -1,0 +1,15 @@
+xxxxxxxxxxxxxxxxxx Basic Template xxxxxxxxxxxxxxxxxxx
+
+Flight Reservation:
+	Flight:
+		flightNumber(20chars max)
+		operatingAirlines(enumeration)
+		arrivalCity(20chars max)
+		dateOfDeparture(type=date)
+		estimatedDepartureTime(type=time)
+	Passenger:
+		lastName(20chars max)
+		firstName(20chars max)
+		middleName(20chars max)
+		email
+		phone(10digits max)

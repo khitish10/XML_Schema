@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.blueairlines/flightMain"
+	xmlns:tns="http://www.blueairlines/flightMain"
+	elementFormDefault="qualified">
+	
+	<include schemaLocation="flightSimpleTypes.xsd"/>
+	
+	<complexType name="flightComponents">
+		<sequence>
+			<element name="flightNumber" type="tns:maxString20" />
+			<element name="operatingAirline" type="tns:airlineOptions" />
+			<element name="arrivalCity" type="tns:maxString20" />
+			<element name="dateOfDeparture" type="date" />
+			<element name="estimatedDepartureTime" type="time" />
+		</sequence>
+	</complexType>
+	
+	
+	
+	<simpleType name="airlineOptions">
+		<restriction base="string">
+			<enumeration value="US" />
+			<enumeration value="American" />
+			<enumeration value="Alaska" />
+			<enumeration value="South-West" />
+			<enumeration value="Delta" />
+		</restriction>
+	</simpleType>
+</schema>

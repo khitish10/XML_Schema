@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:reservation xmlns:tns="http://www.blueairlines/flightMain" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blueairlines/flightMain flightMain.xsd ">
+  <flight>
+    <tns:flightNumber>12345552667</tns:flightNumber>
+    <tns:operatingAirline>US</tns:operatingAirline>
+    <tns:arrivalCity>Amsterdam</tns:arrivalCity>
+    <tns:dateOfDeparture>2021-01-31</tns:dateOfDeparture>
+    <tns:estimatedDepartureTime>12:35:00</tns:estimatedDepartureTime>
+  </flight>
+  <passenger>
+    <lastName>Lassley</lastName>
+    <firstName>William</firstName>
+    <middleName>K</middleName>
+    <email>will10@gmail.com</email>
+    <phoneNumber>1234567654</phoneNumber>
+  </passenger>
+</tns:reservation>

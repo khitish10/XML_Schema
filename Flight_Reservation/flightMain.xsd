@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.blueairlines/flightMain"
+	xmlns:tns="http://www.blueairlines/flightMain">
+
+	<include schemaLocation="flightCommon.xsd"/>
+	<include schemaLocation="flightSimpleTypes.xsd"/>
+	
+	<element name="reservation">
+		<complexType>
+			<sequence>
+				<element name="flight" type="tns:flightComponents" />
+				<element name="passenger" type="tns:passsengerComponents" />
+			</sequence>
+		</complexType>
+	</element>
+
+	
+
+	<complexType name="passsengerComponents">
+		<sequence>
+			<element name="lastName" type="tns:maxString20" />
+			<element name="firstName" type="tns:maxString20" />
+			<element name="middleName" type="tns:maxString20" />
+			<element name="email" type="tns:maxString20" />
+			<element name="phoneNumber" type="tns:maxDigits10" />
+		</sequence>
+	</complexType>
+
+	
+
+	<simpleType name="maxDigits10">
+		<restriction base="string">
+			<pattern value="[0-9]{10}" />
+		</restriction>
+	</simpleType>
+
+	
+
+</schema>

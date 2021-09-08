@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.blueairlines/flightMain"
+	xmlns:tns="http:http://www.blueairlines/flightMain"
+	elementFormDefault="qualified">
+
+
+	<simpleType name="maxString20">
+		<restriction base="string">
+			<maxLength value="20" />
+		</restriction>
+	</simpleType>
+</schema>
